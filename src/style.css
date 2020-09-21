@@ -40,6 +40,11 @@
     font-size: 1.2rem;
   }
   
+  .main-navbar{
+    background-color: black;
+    color: white;
+  }
+
   .main-heading {
     margin: 2rem 0;
   }
