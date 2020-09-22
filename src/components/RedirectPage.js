@@ -7,7 +7,7 @@ const RedirectPage = () => {
         <div className="">
             Redirect Page
         </div>
-    )
-}
+    );
+};
 
 export default RedirectPage;

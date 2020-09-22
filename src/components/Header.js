@@ -4,10 +4,10 @@ import "bootstrap/dist/css/bootstrap.css";
 
 const Header = () => {
     return(
-        <div className="main-heading">
+        <h1 className="main-heading">
             Spotify Music Search
-        </div>
-    )
-}
+        </h1>
+    );
+};
 
 export default Header;
