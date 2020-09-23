@@ -1,18 +1,29 @@
-import React from 'react';
-import {connect} from 'react-redux';
-import Button from 'react-bootstrap/Button';
-import Navbar from './Navbar';
-import Header from './Header';
-
+import React from "react";
+import { connect } from "react-redux";
+import Button from "react-bootstrap/Button";
+import Navbar from "./Navbar";
+import Header from "./Header";
 
 const Home = (props) => {
-    return(
-        <div className="login">
-        <Navbar/>
-        <Header/>
-        <Button variant="outline-success"> Login to spotify</Button>
-        </div>
-    );
+  const {
+    REACT_APP_CLIENT_ID,
+    REACT_APP_AUTHORIZE_URL,
+    REACT_APP_REDIRECT_URL,
+  } = process.env;
+  const handleLogin = () => {
+    window.location = `${REACT_APP_AUTHORIZE_URL}?client_id=${REACT_APP_CLIENT_ID}&redirect_uri=${REACT_APP_REDIRECT_URL}&response_type=token&show_dialog=true`;
+  };
+
+  return (
+    <div className="login">
+      <Navbar />
+      <Header />
+      <Button variant="outline-success" onClick={handleLogin}>
+        {" "}
+        Login to spotify
+      </Button>
+    </div>
+  );
 };
 
 export default connect()(Home);
