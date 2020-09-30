@@ -1,1 +1,12 @@
-Step one : How to use Spotify API to provide OAuth authentication
+in .env file :
+
+REACT_APP_AUTHORIZE_URL will be used to show authorize popup to access your Spotify 
+account from your app.
+
+REACT_APP_REDIRECT_URL will be the URL where you want the user
+to be redirected once the user is authorized successfully.
+{Note that, the value of the REACT_APP_REDIRECT_URL variable must match 
+the value entered for the Redirect URIs in the Edit settings screenshot shown}
+
+Each variable starts with REACT_APP_ so Create React App will automatically add those variables 
+in process.env object to make it accessible in the application.
