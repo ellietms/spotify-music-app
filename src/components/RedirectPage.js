@@ -3,6 +3,7 @@ import _ from 'lodash';
 import {getParamValues} from '../utils/functions';
 
 const RedirectPage = () => {
+    //access the URL parameters and store them in local storage.
     function componentDidMount(){
       const {setExpiryTime , history , location} = props; 
       try{
