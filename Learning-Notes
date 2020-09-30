@@ -2,11 +2,24 @@ in .env file :
 
 REACT_APP_AUTHORIZE_URL will be used to show authorize popup to access your Spotify 
 account from your app.
-
+****
 REACT_APP_REDIRECT_URL will be the URL where you want the user
 to be redirected once the user is authorized successfully.
 {Note that, the value of the REACT_APP_REDIRECT_URL variable must match 
 the value entered for the Redirect URIs in the Edit settings screenshot shown}
+once we click on the AGREE button, we’re redirected to the RedirectPage
+component and Spotify will automatically add the access_token, token_type
+and expires_in to our redirect URL as shown below.
 
-Each variable starts with REACT_APP_ so Create React App will automatically add those variables 
-in process.env object to make it accessible in the application.
+(url...#access_token=BQAYA2X6Uwtbhf8PlvjKQhePSBXDcfzljSC9neFEXQOoe2SzWx_VXaVgoe_tvzUJpfGRvtwjlTq3ohlU0q6SVnJVyaiiwvl65aP2qDozRImCyU-vwn2We_8JnQVdPo5mv4TTlrbTqbOh8sA83_oW11AhHHEv92Y
+&token_type=Bearer&expires_in=3600)
+
+access_token is a Bearer token which you will be adding 
+to every request made to the Spotify API later.
+expires_in specifies the token expiration time which is 3600 seconds i.e 
+in 1 hour by default. After that, you need to log in again.
+****
+Each variable starts with REACT_APP_ so Create React App will automatically 
+add those variables in process.env object to make it accessible in the application.
+
+
