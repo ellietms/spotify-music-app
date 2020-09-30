@@ -23,3 +23,14 @@ Each variable starts with REACT_APP_ so Create React App will automatically
 add those variables in process.env object to make it accessible in the application.
 
 
+-------------
+Headers: 
+Headers are an important part of the API request and response
+as they represent the meta-data associated with the API request 
+and response. Headers carry information for:
+Request and Response Body
+Request Authorization
+Response Caching 
+Response Cookies
+HTTP headers also carry a lot of other information 
+around HTTP connection types proxies etc
