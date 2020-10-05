@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 const Loader = (props) => {
   const [node] = useState(document.createElement("div"));
   const loader = document.querySelector("#loader");
-
+//why useEffect?
   useEffect(() => {
     loader.appendChild(node).classList.add("message");
   }, [loader, node]);
