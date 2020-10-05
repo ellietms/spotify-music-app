@@ -32,6 +32,15 @@ export const addPlaylist = (playlists) => ({
 export const initiateGetResult = (searchTerm) => {
   return async (dispatch) => {
     try {
+      const API_URL = `https://api.spotify.com/v1/search?query=${encodeURIComponent(
+        searchTerm
+      )}&type=album,playlist,artist`;
+      const result = await get(API_URL);
+      console.log("RESULT", result);
+      const { albums, artists, playlists } = result;
+      dispatch(setAlbums(albums));
+      dispatch(setArtists(artists));
+      return dispatch(setPlaylist(playlists));
     } catch (error) {
       console.log("error", error);
     }
