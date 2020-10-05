@@ -1,0 +1,26 @@
+-JSON.parse:
+const result = JSON.parse(parses a string, written in JSON format)
+result returns a JavaScript object.
+
+-LocalStorage:
+localStorage is a type of web storage that allows JavaScript sites 
+and apps to store and access data right in the browser with no expiration date. 
+This means the data stored in the browser will persist even 
+after the browser window has been closed.
+
+setItem(): Add key and value to localStorage
+getItem(): Retrieve a value by the key from localStorage
+removeItem(): Remove an item by key from localStorage
+clear(): Clear all localStorage
+key(): Passed a number to retrieve nth key of a localStorage
+
+
+-JSON.stringify:(opposite of Json.parse)
+common use of JSON is to exchange data to/from a web server.
+When sending data to a web server, the data has to be a string.
+Convert a JavaScript object into a string with JSON.stringify().
+
+-Slice(a,b):
+array.slice(a) => it means cut all the values before index a and keep the index a
+array.slice(a,b) => it means cut all the values before index a and keep them until index
+b-1 (cut b)

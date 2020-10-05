@@ -5,6 +5,7 @@ import {getParamValues} from '../utils/functions';
 const RedirectPage = () => {
     //access the URL parameters and store them in local storage.
     function componentDidMount(){
+      //N.s Props of router component(need to check)
       const {setExpiryTime , history , location} = props; 
       try{
         if(_.isEmpty(location.hash)){

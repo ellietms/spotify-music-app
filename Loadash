@@ -1,0 +1,2 @@
+isEmpty : checks if value is an empty object, collection, map, or set.
+(return true or false)
