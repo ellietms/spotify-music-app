@@ -1,0 +1,15 @@
+Try and catch : 
+When we want to check we have exceptions 
+try{
+    Our code
+}
+catch(exception){
+    what we want to do with exceptions
+}
+
+async and wait : (use more in NOde)
+const nameOfOurFunction = async() => {
+    ...await
+}
+it will wait until it gets the result it will go to next line
+

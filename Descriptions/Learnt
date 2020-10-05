@@ -16,9 +16,10 @@ key(): Passed a number to retrieve nth key of a localStorage
 
 
 -JSON.stringify:(opposite of Json.parse)
+Convert a JavaScript object into a string with JSON.stringify().
 common use of JSON is to exchange data to/from a web server.
 When sending data to a web server, the data has to be a string.
-Convert a JavaScript object into a string with JSON.stringify().
+
 
 -Slice(a,b):
 array.slice(a) => it means cut all the values before index a and keep the index a
